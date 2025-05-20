@@ -1,0 +1,10 @@
+INSERT INTO cliente (id, nome, cpf) VALUES (1, 'Maria Silva', '12345678900');
+INSERT INTO cliente (id, nome, cpf) VALUES (2, 'João Souza', '98765432111');
+
+INSERT INTO veiculo (id, modelo, tipo, disponivel) VALUES (1, 'Civic', 'CARRO', true);
+INSERT INTO veiculo (id, modelo, tipo, disponivel) VALUES (2, 'HB20', 'CARRO', true);
+INSERT INTO veiculo (id, modelo, tipo, disponivel) VALUES (3, 'CG 160', 'MOTO', true);
+INSERT INTO veiculo (id, modelo, tipo, disponivel) VALUES (4, 'Ninja 300', 'MOTO', true);
+
+INSERT INTO aluguel (id, cliente_id, veiculo_id, data_inicio, data_fim) VALUES (1, 1, 1, '2025-05-15', '2025-05-22');
+UPDATE veiculo SET disponivel = false WHERE id = 1;

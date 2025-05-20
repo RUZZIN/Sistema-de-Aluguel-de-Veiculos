@@ -9,18 +9,18 @@ import { TipoVeiculo } from '../../models/veiculo.model';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   template: `
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <label>Modelo:
-        <input formControlName="modelo" />
-      </label>
-      <label>Tipo:
-        <select formControlName="tipo">
-          <option [value]="TipoVeiculo.CARRO">Carro</option>
-          <option [value]="TipoVeiculo.MOTO">Moto</option>
-        </select>
-      </label>
-      <button type="submit" [disabled]="form.invalid">Cadastrar</button>
-    </form>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <label>Modelo:
+          <input formControlName="modelo" />
+        </label>
+        <label>Tipo:
+          <select formControlName="tipo">
+            <option [value]="TipoVeiculo.CARRO">Carro</option>
+            <option [value]="TipoVeiculo.MOTO">Moto</option>
+          </select>
+        </label>
+        <button type="submit" [disabled]="form.invalid">Cadastrar</button>
+      </form>
   `
 })
 export class VeiculoFormComponent {
